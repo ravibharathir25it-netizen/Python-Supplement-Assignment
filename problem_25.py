@@ -1,11 +1,13 @@
 # Problem 25: Find GCD of two numbers
 # Find and fix the error
 
+# ...existing code...
 def gcd(a, b):
-    while b != 0:
-        temp = b
-        b = a % b
-        a = temp
+    a, b = abs(a), abs(b)
+    while b:
+        a, b = b, a % b
     return a
 
-print(f"GCD of 48 and 18: {gcd(48, 18)}")
+x, y = 48, 18
+print(f"GCD of {x} and {y} is {gcd(x, y)}")
+# ...existing code...

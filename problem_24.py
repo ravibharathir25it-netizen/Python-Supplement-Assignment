@@ -1,9 +1,8 @@
 # Problem 24: Remove all spaces from a string
 # Find and fix the error
 
+# ...existing code...
 text = "Hello World From Python"
-no_spaces = ""
-for char in text:
-    if char != " ":
-        no_spaces += char
-print(f"Without spaces: {no_spaces}")
+no_spaces = text.replace(" ", "")
+print(no_spaces)
+# ...existing code...

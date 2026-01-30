@@ -1,11 +1,20 @@
 # Problem 49: Find all divisors of a number
 # Find and fix the error
 
+# ...existing code...
 def find_divisors(n):
-    divisors = []
-    for i in range(1, n):
+    n = abs(int(n))
+    if n == 0:
+        return []
+    divisors = set()
+    i = 1
+    while i * i <= n:
         if n % i == 0:
-            divisors.append(i)
-    return divisors
+            divisors.add(i)
+            divisors.add(n // i)
+        i += 1
+    return sorted(divisors)
 
-print(f"Divisors of 24: {find_divisors(24)}")
+num = 36
+print(f"Divisors of {num}: {find_divisors(num)}")
+# ...existing code...

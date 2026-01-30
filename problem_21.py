@@ -1,11 +1,14 @@
 # Problem 21: Check if list is sorted
 # Find and fix the error
 
-def is_sorted(lst):
-    for i in range(len(lst) - 1):
-        if lst[i] > lst[i + 1]:
-            return False
-    return True
+# ...existing code...
+# Problem 21: Check if list is sorted
+# Find and fix the error
 
-numbers = [1, 2, 3, 4, 5]
-print(f"Is sorted: {is_sorted(numbers)}")
+def is_sorted(lst):
+    return all(lst[i] <= lst[i+1] for i in range(len(lst)-1))
+
+print(is_sorted([1, 2, 3, 4]))   # True
+print(is_sorted([1, 3, 2, 4]))   # False
+print(is_sorted([]))             # True
+# ...existing code...

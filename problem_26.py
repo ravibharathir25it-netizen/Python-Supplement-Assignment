@@ -1,10 +1,11 @@
 # Problem 26: Add item to a list
 # Find and fix the error
-
+# ...existing code...
 def add_item(lst, item):
-    lst = lst + [item]
+    lst.append(item)
     return lst
 
 my_list = [1, 2, 3]
 add_item(my_list, 4)
 print(f"List after adding: {my_list}")
+# ...existing code...

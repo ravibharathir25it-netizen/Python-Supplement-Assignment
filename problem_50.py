@@ -1,6 +1,7 @@
 # Problem 50: Convert string to uppercase
 # Find and fix the error
 
+# ...existing code...
 text = "python programming"
 uppercase = ""
 for char in text:
@@ -9,3 +10,4 @@ for char in text:
     else:
         uppercase += char
 print(f"Uppercase: {uppercase}")
+# ...existing code...

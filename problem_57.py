@@ -1,12 +1,11 @@
 # Problem 57: Find LCM of two numbers
 # Find and fix the error
 
-def gcd(a, b):
-    while b:
-        a, b = b, a % b
-    return a
+# ...existing code...
+def remove_vowels(text):
+    vowels = set("aeiouAEIOU")
+    return "".join(ch for ch in text if ch not in vowels)
 
-def lcm(a, b):
-    return (a * b) // gcd(a, b)
-
-print(f"LCM of 12 and 18: {lcm(12, 18)}")
+s = "Hello World"
+print(f"Without vowels: {remove_vowels(s)}")
+# ...existing code...
