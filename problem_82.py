@@ -1,6 +1,5 @@
 # Problem 82: Remove adjacent duplicates
 # Find and fix the error
-
 def remove_adjacent_duplicates(text):
     result = []
     for char in text:
@@ -10,3 +9,4 @@ def remove_adjacent_duplicates(text):
 
 s = "programming"
 print(f"After removal: {remove_adjacent_duplicates(s)}")
+

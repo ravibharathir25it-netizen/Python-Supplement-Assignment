@@ -1,13 +1,16 @@
 # Problem 63: Find longest word in a sentence
 # Find and fix the error
 
-def find_longest_word(sentence):
-    words = sentence.split()
-    longest = ""
-    for word in words:
-        if len(word) > len(longest):
-            longest = word
-    return longest
+def decimal_to_binary(n):
+    if n == 0:
+        return "0"
+    
+    binary = ""
+    while n > 0:
+        binary = str(n % 2) + binary
+        n = n // 2  # integer division
+    
+    return binary
 
-text = "The quick brown fox jumps"
-print(f"Longest word: {find_longest_word(text)}")
+print(f"Binary of 10: {decimal_to_binary(10)}")
+

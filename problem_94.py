@@ -1,11 +1,8 @@
 # Problem 94: Count bits set to 1
 # Find and fix the error
 
-def count_set_bits(n):
-    count = 0
-    while n:
-        count += n & 1
-        n = n >> 1
-    return count
+def all_unique(lst):
+    return len(lst) == len(set(lst))
 
-print(f"Set bits in 15: {count_set_bits(15)}")
+numbers = [1, 2, 3, 4, 5]
+print(f"All unique: {all_unique(numbers)}")

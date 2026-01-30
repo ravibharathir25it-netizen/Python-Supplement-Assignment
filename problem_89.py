@@ -11,3 +11,6 @@ def is_palindrome_number(n):
     return original == reversed_num
 
 print(f"Is 121 palindrome? {is_palindrome_number(121)}")
+print(f"Is 123 palindrome? {is_palindrome_number(123)}")
+
+

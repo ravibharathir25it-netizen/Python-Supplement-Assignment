@@ -1,6 +1,5 @@
 # Problem 96: Find two numbers that sum to target
 # Find and fix the error
-
 def two_sum(nums, target):
     seen = {}
     for i in range(len(nums)):
@@ -12,3 +11,4 @@ def two_sum(nums, target):
 
 numbers = [2, 7, 11, 15]
 print(f"Indices: {two_sum(numbers, 9)}")
+
