@@ -4,6 +4,6 @@
 numbers = [45, 12, 78, 34, 89, 23]
 largest = numbers[0]
 for i in range(len(numbers)):
-    if numbers[i] > largest:
-        largest = numbers[i]
+    if numbers > largest:
+        largest = numbers
 print(f"Largest number is: {largest}")
